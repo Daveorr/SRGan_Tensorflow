@@ -1,0 +1,32 @@
+{
+    "dataset": {
+        "DATASET_NAME": "div2k-bicubic_x4",
+        "TFR_TRAIN_PATH": "./datasets/div2k/bicubic_x4/2.0.0",
+        "HR_SHAPE": [
+            96,
+            96,
+            3
+        ],
+        "LR_SHAPE": [
+            24,
+            24,
+            3
+        ],
+        "SCALING_FACTOR": 4
+    },
+    "srgan": {
+        "FEATURE_MAPS": 64,
+        "RES_BLOCKS": 16,
+        "LEAKY_ALPHA": 0.2,
+        "DISC_BLOCKS": 4
+    },
+    "trainer": {
+        "PRETRAIN_LR": 1e-4,
+        "FINETUNE_LR": 1e-5,
+        "PRETRAIN_EPOCHS": 2500,
+        "FINETUNE_EPOCHS": 2500,
+        "STEPS_PER_EPOCH": 10,
+        "TRAIN_BATCH_SIZE": 32,
+        "INFER_BATCH_SIZE": 1
+    }
+}
