@@ -5,6 +5,7 @@ A simple Tensorflow 2.16 implementation of SRGAn - Train and Test
 - Clone this repository
 - Install requirements with ->  `pip install -r requirements.txt`
 - Download dataset from [DIV2K](https://data.vision.ee.ethz.ch/cvl/DIV2K/) or by running ->  `python download_dataset.py`
+- If you are not interested in training from scratch just use the provided models that you find in `./assets/srgan_models_examples.zip`. For inference use the finetuned one.
 - You can visualize the dataset is correctly loaded in ->  `test_dataloaders.ipynb`
 ### Training
 - For an example of training you can refer to ->  `train_srgan_GPU.ipynb`
